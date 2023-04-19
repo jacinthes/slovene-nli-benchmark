@@ -1,7 +1,7 @@
 # Slovene NLI Benchmark Submission
 This repository contains the submission to the [Slovene NLI Benchmark](https://slobench.cjvt.si/leaderboard/view/9),  a challenge aimed at improving the benchmark score for Slovene natural language inference (NLI) models. This submission aims to enhance the ability of machine learning models to comprehend natural language inferences in Slovene.
 
-## Submitted model
+## Published models
 I have made available the best performing model on the SI-NLI dataset through Hugging Face -> [cross-encoder-si-nli-snli-mnli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli-snli-mnli/)<br />
 This model achieved a validation accuracy of: **0.7751** and it's predictions are submitted for evaluation.
 
