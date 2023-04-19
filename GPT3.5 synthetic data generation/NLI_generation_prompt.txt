@@ -1,0 +1,7 @@
+Sestavi tri hipoteze (eno za vsako NLI oznako: contradiction, entailment, neutral) na podlagi podane premise v slovenskem jeziku: "<<PREMISE>>".
+Opis oznak:
+Contradiction: hipoteza je napačna.
+Entailment: hipoteza je pravilna.
+Neutral: hipoteza je nedoločena.
+Navodila:
+Začni vsako poved s poimenovanjem oznake (Contradiction, Entailment, Neutral), sledi dvopičje.
