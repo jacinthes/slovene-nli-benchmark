@@ -17,7 +17,7 @@ Section *Approach* describes all the steps taken during the development.
 
 # Approach
 ## Model architecture
-[SentenceTransformers](https://arxiv.org/pdf/1908.10084.pdf) CrossEncoder class was used to train the models. The CrossEncoder uses a Siamese BERT-Network to encode both input sentences simultaneously (single pass) and then predicts the target value. It achieves state-of-the-art results on various sentence pair classification tasks - including NLI.
+[SentenceTransformers](https://arxiv.org/pdf/1908.10084.pdf) [CrossEncoder](https://www.sbert.net/examples/applications/cross-encoder/README.html) class was used to train the models. The CrossEncoder uses a Siamese BERT-Network to encode both input sentences simultaneously (single pass) and then predicts the target value. It achieves state-of-the-art results on various sentence pair classification tasks - including NLI.
 
 ## Base model
 [SloBERTa](https://huggingface.co/EMBEDDIA/sloberta) was used as the base model as it outperformed other models during experimentation ([xlm-roberta-large](https://huggingface.co/xlm-roberta-large), [CroSloEngual BERT](https://huggingface.co/EMBEDDIA/crosloengual-bert)). 
