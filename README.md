@@ -13,7 +13,7 @@ Folder *training* contains the training script, which was used to train all the 
 Folder *inference* contains the notebook, which can be used to make predictions using either of the two published models.<br />
 Folder *translation* contains the script, which was used to translate training samples.<br />
 Folder *GPT3.5 synthetic data generation* contains synthetic data generator script, GPT prompt, sentence list and the generated dataset.<br />
-Folder *back translations* contains the dataset generated with back translation technique.
+Folder *back translations* contains the dataset generated with the back translation technique.
 Section *Approach* describes all the steps taken during the development.
 
 # Approach
