@@ -3,9 +3,9 @@ This repository contains the submission to the [Slovene NLI Benchmark](https://s
 
 ## Published models
 I have made available the best performing model (measured on the SI-NLI validation set) from my experimentation through Hugging Face -> [cross-encoder-si-nli-snli-mnli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli-snli-mnli/)<br />
-This model achieved the validation accuracy of: **0.7751** and it's predictions are submitted for evaluation.
+This model achieved the validation accuracy of: **77.51** and it's predictions are submitted for evaluation.
 
-I have also published a second model [cross-encoder-si-nli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli/), which was trained only on the SI-NLI training data, achieving the validation accuracy of: **0.7660**<br />
+I have also published a second model [cross-encoder-si-nli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli/), which was trained only on the SI-NLI training data, achieving the validation accuracy of: **76.60**<br />
 
 ## Repo structure
 Folder *training* contains the training script, which was used to train all the models during experimentation.<br />
@@ -86,7 +86,7 @@ Generative AI has also a very powerful tool for generating synthetic labeled dat
 <br />
 <br />
 The model was trained using the same hyperparameters as the model from 1.<br />
-It performed worse than the above options and achieved the accuracy of: **0.7239**<br />
+It performed worse than the above options and achieved the accuracy of: **72.39**<br />
 <br />
 Upon further inspection of the training data, GPT struggles with differentiating between neutral and entailment labels. A large percent of generated neutral hypotheses should be classified as entailment. Nonetheless, GPT shows promise for generating training data for low resource domains/languages.
 
@@ -95,6 +95,6 @@ Augmenting the original dataset with various techniques can lead to better model
 <br />
 <br />
 The model was trained using the same hyperparameters as the model from 1.<br />
-The model performed slightly worse than the 1. and 2. options and achieved the accuracy of: **0.7623**<br />
+The model performed slightly worse than the 1. and 2. options and achieved the accuracy of: **76.23**<br />
 <br />
 While this experiment did not negatively impact performance on the SI-NLI dev set, the generalization benefits of this technique are uncertain. While back translating the SI-NLI data did expand the training set, it does not necessarily guarantee improved generalization to new, unseen data.
