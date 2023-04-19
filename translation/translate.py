@@ -15,7 +15,7 @@ dataset = load_dataset("glue", "mnli")
 #dataset = load_dataset("snli")  # If you want to work with the snli dataset
 
 # Select the number of training samples to translate
-num_samples = 2
+num_samples = 20000
 train_subset = dataset['train'].select(range(num_samples))
 
 # Define the batch size
