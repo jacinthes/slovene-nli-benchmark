@@ -2,10 +2,16 @@
 This repository contains the submission to the [Slovene NLI Benchmark](https://slobench.cjvt.si/leaderboard/view/9),  a challenge aimed at improving the benchmark score for Slovene natural language inference (NLI) models. This submission aims to enhance the ability of machine learning models to comprehend natural language inferences in Slovene.
 
 ## Published models
-I have made available the best performing model (measured on the SI-NLI validation set) from my experimentation through Hugging Face -> [cross-encoder-sloberta-si-nli-snli-mnli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli-snli-mnli/)<br />
-This model achieved the validation accuracy of: **77.51** and it's predictions are submitted for evaluation.
+I have made available the best performing model through Hugging Face -> [cross-encoder-sloberta-si-nli-snli-mnli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli-snli-mnli/)<br />
+This model achieved the following metrics:
+| Test accuracy | 77.15 |
+|---------------|-------|
+| Dev accuracy  | 77.51 |
 
-I have also published a second model [cross-encoder-sloberta-si-nli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli/), which was trained only on the SI-NLI training data, achieving the validation accuracy of: **75.14**<br />
+I have also published a second model [cross-encoder-sloberta-si-nli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli/), which was trained only on the SI-NLI training data, achieving:
+| Test accuracy | 75.95 |
+|---------------|-------|
+| Dev accuracy  | 75.14 |
 
 ## Repo structure
 Folder *training* contains the training script, which was used to train all the models during experimentation.<br />
