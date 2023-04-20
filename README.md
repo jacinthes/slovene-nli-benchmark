@@ -35,14 +35,14 @@ To evaluate the impact of using the CrossEncoder architecture on model accuracy,
 
 | Hyperparameter    | Value            | Reason                                                                                    |
 |-------------------|------------------|-------------------------------------------------------------------------------------------|
-| Batch size        | 24               | Yielded better results compared to 16, 32, 64 and 96                                      |
+| Batch size        | 64               | Yielded better results compared to 16, 32, 48 and 96                                      |
 | Epochs            | 15               |                                                                                           |
 | Sequence length   | 102              | Same as the current benchmark leader: 99th percentile of the lengths in the training set |
 | Loss function     | CrossEntropyLoss |                                                                                           |
 | Optimizer         | AdamW            |                                                                                           |
 | Learning rate     | 2e-5             |                                                                                           |
 | Warmup steps      | 0.1              | Percent of all training steps.                                                            |
-| Weight decay rate | 0.01             | Decided based on experimentation with the starting point calculated using the formula proposed in  ([Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101))  $w = λ \sqrt{b/BT}$ where $b$ is the batch size,  $B$ the number of training samples,  $T$ the number of epochs and $λ$ a hyperparameter recommend by the authors to be in $[0.025, 0.05]$                                                                                     |
+| Weight decay rate | 0.0015             | Decided based on experimentation with the starting point calculated using the formula proposed in  ([Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101))  $w = λ \sqrt{b/BT}$ where $b$ is the batch size,  $B$ the number of training samples,  $T$ the number of epochs and $λ$ a hyperparameter recommend by the authors to be in $[0.025, 0.05]$                                                                                     |
 
 
 Dev set accuracy was used for model selection.<br />
