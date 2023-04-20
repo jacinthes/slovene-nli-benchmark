@@ -49,11 +49,11 @@ Dev set accuracy was used for model selection.<br />
 The best model achieved the following dev set metrics:<br />
 |               | precision | recall | f1     | support |
 |---------------|-----------|--------|--------|---------|
-| entailment    | 0.7772    | 0.7409 | 0.7586 | 193     |
-| neutral       | 0.7447    | 0.8092 | 0.7756 | 173     |
-| contradiction | 0.7771    | 0.7514 | 0.7640 | 181     |
+| entailment    | 0.7740    | 0.7098 | 0.7405 | 193     |
+| neutral       | 0.7150    | 0.7977 | 0.7541 | 173     |
+| contradiction | 0.7684    | 0.7514 | 0.7598 | 181     |
 |               |           |        |        |         |
-| accuracy      | 0.7660    |        |        |         |
+| accuracy      | 0.7514    |        |        |         |
 
 ### 2. Extending the training set by translating existing English NLI datasets
 To test the hypothesis that translating high-quality data points will be beneficial for the Slovene NLI model, 40000 training examples were translated from two commonly used NLI datasets [SNLI](https://nlp.stanford.edu/projects/snli/) and [MNLI](https://cims.nyu.edu/~sbowman/multinli/). 20000 premise hypothesis pairs from each dataset were translated using the Google translator. The exact translation is provided in the folder *translation*. Other free translation options were tested [m2m100_1.2B](https://huggingface.co/facebook/m2m100_1.2B) but performed worse.<br />
@@ -95,6 +95,6 @@ Augmenting the original dataset with various techniques can lead to better model
 <br />
 <br />
 The model was trained using the same hyperparameters as the model from 1.<br />
-The model performed slightly worse than the 1. and 2. options and achieved the accuracy of: **76.23**<br />
+The model performed slightly worse than the 1. and 2. options and achieved the accuracy of: **74.4**<br />
 <br />
 While this experiment did not negatively impact performance on the SI-NLI dev set, the generalization benefits of this technique are uncertain. While back translating the SI-NLI data did expand the training set, it does not necessarily guarantee improved generalization to new, unseen data.
