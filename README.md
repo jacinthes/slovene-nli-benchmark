@@ -5,7 +5,7 @@ This repository contains the submission to the [Slovene NLI Benchmark](https://s
 I have made available the best performing model (measured on the SI-NLI validation set) from my experimentation through Hugging Face -> [cross-encoder-si-nli-snli-mnli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli-snli-mnli/)<br />
 This model achieved the validation accuracy of: **77.51** and it's predictions are submitted for evaluation.
 
-I have also published a second model [cross-encoder-si-nli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli/), which was trained only on the SI-NLI training data, achieving the validation accuracy of: **76.60**<br />
+I have also published a second model [cross-encoder-si-nli](https://huggingface.co/jacinthes/cross-encoder-sloberta-si-nli/), which was trained only on the SI-NLI training data, achieving the validation accuracy of: **75.14**<br />
 
 ## Repo structure
 Folder *training* contains the training script, which was used to train all the models during experimentation.<br />
