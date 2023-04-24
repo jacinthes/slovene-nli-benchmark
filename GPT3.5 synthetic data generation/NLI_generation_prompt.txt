@@ -5,3 +5,8 @@ Entailment: hipoteza je pravilna.
 Neutral: hipoteza je nedoločena.
 Navodila:
 Začni vsako poved s poimenovanjem oznake (Contradiction, Entailment, Neutral), sledi dvopičje.
+Primer:
+Premisa: Danes je sončno.
+Contradiction: Zaradi slabega vremena je tekma odpovedana.
+Entailment: Danes ne potrebujem dežnika.
+Neutral: Odločili smo se, da gremo na izlet.
